@@ -1,6 +1,7 @@
 class Post < ApplicationRecord
 	# Associations
 	belongs_to :user
+	has_many :comments
 
 	# Validations
 	validates :title, presence: true,
